@@ -6,7 +6,7 @@
     <title>Ensinando HTML</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h1>Explicação de HTML básico</h1>
     <p>
         Aqui ensinaremos aos curiosos como funcionam as tags na linguagem de marcação HTML com exemplos práticos!
     </p>
@@ -85,6 +85,113 @@
     <h5>
         <code>&lt;/ul&gt;</code>
     </h5>
+    <h2>Parte 4 - Tabela</h2>
+    <p>
+        Tabelas em HTML demandam um pouquinho mais de trabalho, mas não são um bicho de 7 cabeças. O processo é bem simples, nele utilizaremos o <code>&lt;table&gt;</code> para indicar que estamos criando uma tabela, dentro dela colocaremos a tag <code>&lt;tr&gt;</code> para indicar as linhas e por fim a tag <code>&lt;td&gt;</code> para inserir os dados na tabela. Aqui está uma demonstração:
+    </p>
+    <h3><code>&lt;h1&gt;</code>Tabela<code>&lt;h1&gt;</code></code></h3>
+    <p><code>&lt;table&gt;</code></p>
+    <p><code>&lt;tr&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A1<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A2<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A3<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;/tr&gt;</code></p>
+    <p><code>&lt;/table&gt;</code></p>
+    <p>Durante a demonstração na web, aparecerá desta maneira:</p>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+    </table>
+    <p>
+        Sabendo dessa informação, basta agora inserirmos as colunas repetindo o <code>&lt;tr&gt;</code> para criarmos uma nova linha e inserindo o <code>&lt;td&gt;</code> e assim por diante. Aqui está um exemplo de uma tabela de 4 colunas e 3 linhas sem muitos detalhes de forma básica:
+    </p>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+            <td>A4</td>
+        </tr>
+        <tr><td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+            <td>B4</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+            <tD>C4</tD>
+        </tr>
+    </table>
+    <p>
+        Para deixar a tabela mais semelhante como tabelas profissionais com células mais estruturadas usaremos uma tag chamada <code>&lt;style&gt;</code> que definirá o estilo da célula e após inserí-la, pediremos para colocar na tabela um limite separando célula por célula usando a tag "border", para definir uma fronteira, logo na linha  de baixo podemos definir a largura. Exemplo:
+    </p>
+    <h3><code>&lt;h1&gt;</code>Tabela<code>&lt;h1&gt;</code></code></h3>
+    <p><code>&lt;style&gt;</code></p>
+    <p>table {</p>
+    <p>&nbsp;&nbsp;witdth: 400px;</p>
+    <p>}</p>
+    <p>td {</p>
+    <p>&nbsp;&nbsp;border: 1px solid black;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:8px</p>
+    <p>}</p>
+    <p><code>&lt;/style&gt;</code></p>
+    <p><code>&lt;table&gt;</code></p>
+    <p><code>&lt;tr&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A1<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A2<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A3<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação A4<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;/tr&gt;</code></p>
+    <p><code>&lt;/table&gt;</code></p>
+    <p><code>&lt;tr&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação B1<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação B2<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação B3<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação B4<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;/tr&gt;</code></p>
+    <p><code>&lt;tr&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação C1<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação C2<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação C3<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;td&gt;</code>informação C4<code>&lt;/td&gt;</code></p>
+    <p><code>&lt;/tr&gt;</code></p>
+    <p>visualmente ficará mais agradável:</p>
+    <style>
+        table.estilizada {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        .estilizada td {
+            border: 1px solid black
+        }
+    </style>
+    <table class="estilizada">
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+                <td>A4</td>
+            </tr>
+            <tr>
+                <td>B1</td>
+                <td>B2</td>
+                <td>B3</td>
+                <td>B4</td>
+            </tr>
+            <tr>
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+                <tD>C4</tD>
+            </tr>
+    </table>
     
+
 </body>
 </html>
