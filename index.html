@@ -69,7 +69,7 @@
     </p>
     <h3>
         <code>&lt;h1&gt;</code> Lista de tarefas (ordem irrelevante)<code>&lt;/h1&gt;</code>
-    </h3>
+    </pre>
     <h5>
         <code>&lt;ul&gt;</code>
     </h5>
@@ -89,7 +89,7 @@
     <p>
         Tabelas em HTML demandam um pouquinho mais de trabalho, mas não são um bicho de 7 cabeças. O processo é bem simples, nele utilizaremos o <code>&lt;table&gt;</code> para indicar que estamos criando uma tabela, dentro dela colocaremos a tag <code>&lt;tr&gt;</code> para indicar as linhas e por fim a tag <code>&lt;td&gt;</code> para inserir os dados na tabela. Aqui está uma demonstração:
     </p>
-    <h3><code>&lt;h1&gt;</code>Tabela<code>&lt;h1&gt;</code></code></h3>
+    <pre><code>&lt;h1&gt;</code>Tabela<code>&lt;h1&gt;</code></code></pre>
     <p><code>&lt;table&gt;</code></p>
     <p><code>&lt;tr&gt;</code></p>
     <p><code>&lt;td&gt;</code>informação A1<code>&lt;/td&gt;</code></p>
@@ -130,7 +130,7 @@
     <p>
         Para deixar a tabela mais semelhante como tabelas profissionais com células mais estruturadas usaremos uma tag chamada <code>&lt;style&gt;</code> que definirá o estilo da célula e após inserí-la, pediremos para colocar na tabela um limite separando célula por célula usando a tag "border", para definir uma fronteira, logo na linha  de baixo podemos definir a largura. Exemplo:
     </p>
-    <h3><code>&lt;h1&gt;</code>Tabela<code>&lt;h1&gt;</code></code></h3>
+    <pre><code>&lt;h1&gt;</code>Tabela<code>&lt;h1&gt;</code></code></pre>
     <p><code>&lt;style&gt;</code></p>
     <p>table {</p>
     <p>&nbsp;&nbsp;witdth: 400px;</p>
@@ -191,7 +191,15 @@
                 <tD>C4</tD>
             </tr>
     </table>
-    
+    <h2>Imagens e uso de alt</h2>
+    <p>
+        Para acrescentar uma imagem é muito simples, basta escrever <code>&lt;img&gt;</code>, é importante saber que ainda dentro dos símbolos maior e menor deve-se inserir o "src=" e "alt=", cada um com sua devida função. O "src=" tem a função de indicar onde está a imagem nos arquivos da máquina, enquanto o "alt=" possui a funcionalidade de deixar uma mensagem sobre a imagem, que é útil para pessoas com deficiência visual pois assim a máquina consegue transmitir a mensagem dizendo que ali há uma imagem. Uma ilustração de como ficaria no código seria essa:
+    </p>
+    <pre>
+        <code>&lt;img src="insira_de_onde_vem_o_arquivo_aqui" alt="Imagem X"&gt;</code>
+    </pre>
+    <p>De forma ilustrada, ficaria desta forma:</p>
+    <img src="imagemdelegal.png" alt="Imagem de legal em formato png">
 
 </body>
 </html>
